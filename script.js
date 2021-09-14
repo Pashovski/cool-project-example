@@ -17,3 +17,15 @@ fetch (BASE_URL)
 // for each take each element in the array and passes it to our call back function
 
 })
+function renderLexus(lexusObject) {
+  console.log(lexusObject) 
+
+// For each 
+// Create the Element
+const newImg = document.createElement("img");
+// Connect images with SRC
+newImg.src = lexusObject.image
+// append images to the DOM 
+document.getElementById("lexus-catalogue").append(newImg)
+}
+
