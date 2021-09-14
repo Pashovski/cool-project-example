@@ -1,0 +1,44 @@
+{
+    "lexus": [
+      {
+        "id": 1,
+        "name": "IS250",
+        "style": "sedan",
+        "image": "./assets/lexus/IS250.jpg",
+        "rating": 7,
+        "comment": "Buy a Toyota instead"
+      },
+      {
+        "id": 2,
+        "name": "LC500",
+        "style": "coupe",
+        "image": "./assets/lexus/LC500.jpg",
+        "rating": 10,
+        "comment": "The worst infotainment system available on the market"
+      },
+      {
+        "id": 3,
+        "name": "LS500",
+        "style": "sedan",
+        "image": "./assets/lexus/LS500.jpg",
+        "rating": "7",
+        "comment": "Just okay."
+      },
+      {
+        "id": 4,
+        "name": "LX570",
+        "style": "SUV",
+        "image": "./assets/lexus/LX570.jpg",
+        "rating": 8,
+        "comment": "Handles like a shopping cart"
+      },
+      {
+        "id": 5,
+        "name": "RX350",
+        "style": "SUV",
+        "image": "./assets/lexus/RX350.jpg",
+        "rating": 6,
+        "comment": "19mpg"
+      }
+    ]
+  }
