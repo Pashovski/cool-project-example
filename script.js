@@ -18,7 +18,7 @@ fetch (BASE_URL)
 
 })
 function renderLexus(lexusObject) {
-  console.log(lexusObject) 
+//console.log(lexusObject) 
 
 // For each 
 // Create the Element
@@ -27,5 +27,16 @@ const newImg = document.createElement("img");
 newImg.src = lexusObject.image
 // append images to the DOM 
 document.getElementById("lexus-catalogue").append(newImg)
+
+// add click event listener to the new image element
+newImg.addEventListener("click", function(e){
+    console.log(lexusObject)
+// grab the elements for name, style, image, rating and comment
+
+})
+
+
+
 }
+
 
