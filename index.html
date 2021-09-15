@@ -24,11 +24,11 @@
 
 <!-- Lexus Info  -->
 <div id="lexus-info">
-    <img id="lexus-img" src="" alt="insert Image Here">
+    <img id="lexus-img" src="./assets/lexus/PLACEHOLDER.jpg" alt="insert Image Here">
     <h2 id="name">Name Goes Here</h2>
     <h3 id="style">Style Goes Here</h3>
 </div>
-
+        
 <h3>Rating</h3>
 <p>
     <span id="rating-display">Insert Rating Here</span>  / 10
@@ -36,11 +36,31 @@
 <h3>Comment</h3>
 <p id="comment-display">Insert Comment Here</p>
 
-<!-- "name": "IS250",
-        "style": "sedan",
-        "image": "./assets/lexus/IS250.jpg",
-        "rating": 7,
-        "comment": "Buy a Toyota instead" -->
+<form action="">
+    <h4>Add New Lexus</h4>
+
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="new-name">
+
+        <label for="style">Style: </label>
+        <input type="text" name="style" id="new-style">
+
+        <label for="image">Image: </label>
+        <input type="text" name="iamge" id="new-image">
+
+        <label for="rating"></label>
+        <input type="number" name="rating" id="new-rating">
+
+        <label for="new-comment"></label>
+        <textarea name="new-comment" id="new-comment"></textarea>
+
+        <input type="submit" value="Submit">
+        
+
+
+        
+    
+</form>
 
 
 
