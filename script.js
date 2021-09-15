@@ -79,11 +79,13 @@ function submitHandler(e){
 
     // create a new lexus Object using the values from the form
     const newLexus = {
-        name: "",
-        style: "",
-        image: "",
+        name: e.target["name"].value,
+        style: e.target["style"].value,
+        image: e.target["image"].value,
         rating: 0,
-        comment: ""
+        comment: e.target["new-comment"].value,
         }
         debugger
+
+        e.target.reset()
 }
