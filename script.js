@@ -75,17 +75,18 @@ const newLexusForm = document.getElementById("new-lexus")
 newLexusForm.addEventListener('submit', submitHandler)
 
 function submitHandler(e){
-    e.preventDefault
+    e.preventDefault()
 
     // create a new lexus Object using the values from the form
     const newLexus = {
         name: e.target["name"].value,
         style: e.target["style"].value,
         image: e.target["image"].value,
-        rating: 0,
+        rating: e.target["rating"].value, //parseInt()
         comment: e.target["new-comment"].value,
         }
-        debugger
-
+        
+        //use the element object 
+        renderLexus(newLexus)
         e.target.reset()
 }
