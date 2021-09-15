@@ -26,7 +26,8 @@ const newImg = document.createElement("img");
 // Connect images with SRC
 newImg.src = lexusObject.image
 // append images to the DOM 
-document.getElementById("lexus-catalogue").append(newImg)
+const newCatalogue = document.getElementById("lexus-catalogue")
+newCatalogue.append(newImg)
 
 // add click event listener to the new image element
 newImg.addEventListener("click", function(e){
