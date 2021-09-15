@@ -5,7 +5,7 @@ const BASE_URL = "http://localhost:3000/lexus"
 
 // Make a Get request for Lexus Data
 
- 
+
 fetch (BASE_URL)
     .then(function(res){
         return res.json()
@@ -22,7 +22,7 @@ function renderLexus(lexusObject) {
 // For each 
 // Create the Element
 const newImg = document.createElement("img");
-// Tell the img element to point it's src attribute towards the lexuxObj image string
+// Tell the img element to point it's src attribute towards the lexusObj image string
 newImg.src = lexusObject.image
 console.log(lexusObject)
 
@@ -30,6 +30,7 @@ console.log(lexusObject)
 // append images to the DOM 
 // add click event listener to the new image element
 newImg.addEventListener("click", function(e){
+    console.log('click')
     
 //grab the div with the id=lexus catalogue
 //append the image to the div
@@ -61,6 +62,28 @@ lexComment.innerText = lexusObject.comment
 const newCatalogue = document.getElementById("lexus-catalogue")
 newCatalogue.append(newImg)
 
+
+
 }
 
 
+// grab the new-lexus form
+
+const newLexusForm = document.getElementById("new-lexus")
+
+//attach a 'submit' eventListener to the "new-lexus" form
+newLexusForm.addEventListener('submit', submitHandler)
+
+function submitHandler(e){
+    e.preventDefault
+
+    // create a new lexus Object using the values from the form
+    const newLexus = {
+        name: "",
+        style: "",
+        image: "",
+        rating: 0,
+        comment: ""
+        }
+        debugger
+}
