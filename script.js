@@ -35,7 +35,8 @@ newImg.addEventListener("click", function(e){
 //grab the div with the id=lexus catalogue
 //append the image to the div
 
-
+const lexImg = document.getElementById("lexus-img")
+lexImg.src = lexusObject.image
 // grab the elements for name, style, rating and comment
 const lexName = document.getElementById("name")
 lexName.innerText = lexusObject.name
@@ -86,7 +87,20 @@ function submitHandler(e){
         comment: e.target["new-comment"].value,
         }
         
+        const configObj = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newLexus)
+        }
         //use the element object 
         renderLexus(newLexus)
         e.target.reset()
+
+        fetch(BASE_URL, configObj)
+        .then(function(res){
+            return res.json()
+        })
+        .then(console.log)
 }
