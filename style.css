@@ -1,0 +1,57 @@
+* {
+    margin: 0,
+    
+}
+
+body {
+    padding: 1 rem;
+    text-align: center;
+    background-color: #f8edeb;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+header {
+    padding: 0.5rem;
+    width: 100%;
+    color: white;
+    background-color: black;
+  }
+
+  #lexus-catalogue {
+    display: flex;
+    overflow-x: auto;
+    margin: 1rem 0;
+    max-width: calc(100vw - 2rem);
+  }
+
+  #lexus-catalogue img {
+    flex: 0 1 auto;
+    height: 150px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  #lexus-catalogue img:last-child {
+    margin-right: 0;
+  }
+
+  #lexus-info {
+    position: relative;
+  }
+  
+  .info-image {
+    height: 350px;
+  }
+
+form h4 {
+    width: 100%;
+    padding: 0.25rem;
+    margin: 0.5rem 0;
+    color: white;
+    background-color: #457b9d;
+  }
